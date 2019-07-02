@@ -1,0 +1,124 @@
+.about-story {
+  display: flex;
+  align-items: center;
+}
+
+.about-story-wrapper {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.about-story-text {
+  background-color: white;
+  padding: 32px;
+}
+
+.about-story-background {
+  display: none;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-story {
+    min-height: 760px;
+  }
+
+  .about-story-wrapper {
+    position: absolute;
+  }
+
+  .about-story-text {
+    width: 50vw;
+    background-color: white;
+    margin-left: -128px;
+    padding: 32px;
+  }
+
+  .about-story-background {
+    width: 40vw;
+    height: 600px;
+    display: flex;
+  }
+}
+
+/*ipad pro*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-story {
+    min-height: 760px;
+  }
+
+  .about-story-wrapper {
+    position: absolute;
+  }
+
+  .about-story-text {
+    width: 50vw;
+    background-color: white;
+    margin-left: -128px;
+    padding: 32px;
+    height: 400px;
+  }
+
+  .about-story-background {
+    width: 40vw;
+    height: 600px;
+    display: flex;
+  }
+}
+
+/*laptops*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about-story {
+    min-height: 760px;
+  }
+
+  .about-story-wrapper {
+    position: absolute;
+  }
+
+  .about-story-text {
+    width: 50vw;
+    background-color: white;
+    margin-left: -128px;
+    padding: 32px;
+    height: 400px;
+  }
+
+  .about-story-background {
+    width: 40vw;
+    height: 600px;
+    display: flex;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+  .about-story {
+    min-height: 900px;
+  }
+  .about-story-wrapper {
+    position: absolute;
+  }
+
+  .about-story-text {
+    height: 600px;
+    width: 40vw;
+    background-color: white;
+    margin-left: -200px;
+    padding: 32px;
+  }
+
+  .about-story-background {
+    width: 36vw;
+    height: 800px;
+    display: flex;
+  }
+}

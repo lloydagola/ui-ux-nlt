@@ -1,0 +1,137 @@
+.about {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas: "about-page-number" "about-description";
+  position: relative;
+  overflow: hidden;
+  scroll-snap-align: center;
+  padding: 48px 16px;
+  align-items: center;
+  height: 80vh;
+}
+
+.about-description {
+  grid-area: about-description;
+}
+
+.about-image {
+  position: absolute;
+  z-index: 3;
+  width: 180px;
+  height: 180px;
+  grid-area: about-page-number;
+  justify-self: center;
+}
+
+.about-image > img {
+  height: 100%;
+}
+
+.about-page-number {
+  grid-area: about-page-number;
+  justify-self: center;
+  width: 200px;
+  height: 200px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about {
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: none;
+    grid-template-areas: "about-description about-image about-page-number";
+    min-height: 600px;
+    display: grid;
+    height: 50vh;
+  }
+  .about-description {
+    margin: 52px;
+  }
+
+  .about-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 0;
+    grid-area: about-image;
+  }
+  .about-page-number {
+    position: absolute;
+    grid-area: about-page-number;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/*ipad pro*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+/*laptops*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about {
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: none;
+    grid-template-areas: "about-description about-image about-page-number";
+    padding: 0;
+    height: 100vh;
+    min-height: 600px;
+    display: grid;
+  }
+
+  .about-description {
+    margin: 0 200px;
+  }
+  .about-image {
+    height: 300px;
+    width: 300px;
+    grid-area: about-image;
+    margin-top: 0;
+  }
+
+  .about-page-number {
+    grid-area: about-page-number;
+    position: absolute;
+    grid-column-start: 3;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+  .about {
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: none;
+    grid-template-areas: "about-description about-image about-page-number";
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    min-height: 700px;
+  }
+
+  .about-description {
+    width: 700px;
+    margin: auto;
+  }
+  .about-image {
+    height: 400px;
+    width: 400px;
+    grid-area: about-image;
+    margin-top: 0;
+  }
+
+  .about-page-number {
+    grid-area: about-page-number;
+    position: absolute;
+    grid-column-start: 3;
+    width: 600px;
+    height: 600px;
+  }
+}

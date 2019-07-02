@@ -1,0 +1,90 @@
+#logo {
+  padding-left: 0;
+  padding-right: 0;
+  padding: 16px;
+  width: 100px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #1d1d1d;
+  color: #fff;
+  font-style: bold;
+  transition: 0.4s;
+}
+
+#logo:hover {
+  background: #ffc001;
+  color: #1d1d1d;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+}
+/*laptops*/
+@media (min-width: 980px) {
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    padding: 16px;
+    transition: 0.6s;
+  }
+
+  nav a:hover {
+    background: #1d1d1d;
+    color: #fff;
+    transition: 0.6s;
+  }
+
+  #details-btn,
+  #gallery-loader,
+  #gallery-nav {
+    font-weight: 900;
+  }
+
+  #gallery-nav {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    position: absolute;
+    right: 0;
+  }
+
+  #gallery-nav-left,
+  #gallery-nav-right {
+    background: rgb(255, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 52px;
+  }
+
+  #gallery-nav-left {
+    background-color: #ffc001;
+  }
+}

@@ -1,0 +1,81 @@
+#form-btn {
+  height: 48px;
+}
+
+.success,
+.errors {
+  padding: 16px;
+}
+
+.errors {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+}
+
+.contact-info {
+  padding: 0 16px;
+}
+
+.email > input {
+  margin: 16px 0;
+  padding: 8px;
+  height: 24px;
+}
+
+.email > textarea {
+  height: 120px;
+  margin: 16px 0;
+  padding: 8px;
+}
+
+.contact-info > div {
+  padding: 12px;
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+.footer-wrapper .contact-us {
+  color: white;
+}
+
+/*laptops*/
+@media (min-width: 1200px) {
+  .contact-us {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-info {
+    padding: 16px;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    padding: 0 16px;
+  }
+
+  .email > input {
+    margin: 16px 0;
+    padding: 8px;
+    height: 24px;
+  }
+
+  .email :nth-child(5) {
+    height: 120px;
+    margin: 16px 0;
+    padding: 8px;
+  }
+}

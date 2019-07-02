@@ -1,0 +1,223 @@
+.about-services {
+  height: 1560px;
+  overflow: hidden;
+}
+
+.about-services-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+}
+
+.about-services-description {
+  padding: 32px;
+}
+
+.about-services-description > h1 {
+  color: #107dac;
+}
+
+.about-services-cards {
+  width: 70vw;
+  padding: 32px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.about-services-card {
+  padding: 32px;
+  margin: 16px;
+  border-radius: 4px;
+  background-color: white;
+  height: 280px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+.about-services-card > p {
+  text-align: center;
+}
+
+.about-service-card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  color: #107dac;
+  margin: auto;
+}
+
+.about-service-card-icon > i {
+  font-size: 6em;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-services-description {
+    width: auto;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .about-services-description > h1 {
+    width: auto;
+  }
+
+  .about-services {
+    height: 1380px;
+  }
+}
+
+/*ipad pro*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-services {
+    height: 1080px;
+  }
+
+  .about-services-wrapper {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .about-services-description {
+    width: auto;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .about-services-description > h1 {
+    width: auto;
+  }
+
+  .about-services-background {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-services-cards {
+    width: 70vw;
+    padding: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+  }
+
+  .about-services-card:hover {
+    margin-top: -4px;
+    transition: 0.3s;
+  }
+}
+
+/*laptops*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about-services {
+    height: 1080px;
+  }
+
+  .about-services-wrapper {
+    height: 100vh;
+  }
+
+  .about-services-description {
+    text-align: center;
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .about-services-description > h1 {
+    width: auto;
+  }
+
+  .about-services-description {
+    width: 20%;
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .about-services-background {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-services-cards {
+    width: 70vw;
+    padding: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    right: 0;
+  }
+
+  .about-services-card:hover {
+    margin-top: -4px;
+    transition: 0.3s;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+  .about-services {
+    height: 1080px;
+  }
+
+  .about-services-wrapper {
+    height: 100vh;
+  }
+
+  .about-services-description {
+    text-align: center;
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .about-services-description > h1 {
+    width: auto;
+  }
+
+  .about-services-description {
+    width: 20%;
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .about-services-background {
+    width: auto;
+    height: auto;
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .about-services-cards {
+    width: 50vw;
+    padding: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+    right: 0;
+  }
+
+  .about-services-card:hover {
+    margin-top: -4px;
+    transition: 0.3s;
+  }
+}

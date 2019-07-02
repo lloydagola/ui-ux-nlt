@@ -1,0 +1,93 @@
+.about-hero {
+  height: calc(100vh - 52px);
+  min-height: 600px;
+  overflow: hidden;
+  position: relative;
+  background-image: url("../../assets/images/justice.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-hero-wrapper {
+  height: calc(100vh - 52px);
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: auto;
+  position: absolute;
+}
+
+.about-hero-text {
+  padding: 0 16px;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .about-hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  .about-hero-wrapper {
+    height: 100%;
+  }
+  .about-hero-text {
+    padding: 0 48px;
+  }
+}
+
+/*ipad pro*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .about-hero {
+    height: 60vh;
+    min-height: 500px;
+  }
+
+  .about-hero-wrapper {
+    height: 100%;
+  }
+}
+
+/*laptops*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about-hero {
+    height: 100vh;
+    min-height: 768px;
+  }
+
+  .about-hero-wrapper {
+    height: 100%;
+  }
+
+  .about-hero-text {
+    width: calc(50vw - 128px);
+    padding: 0 64px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1400px) {
+  .about-hero {
+    height: 100vh;
+    min-height: 900px;
+  }
+
+  .about-hero-wrapper {
+    height: 100%;
+  }
+
+  .about-hero-text {
+    width: calc(50vw - 128px);
+    padding: 0 64px;
+  }
+}

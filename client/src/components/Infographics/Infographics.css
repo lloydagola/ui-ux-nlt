@@ -1,0 +1,29 @@
+.infographics {
+  height: 100vh;
+  min-height: 480px;
+  color: #fff;
+  padding: 32px;
+  display: flex;
+  margin-top: -70px;
+  align-items: center;
+}
+
+.infographic-item-1,
+.infographic-item-2,
+.infographic-item-3 {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+@media (min-width: 980px) {
+  .infographics-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .infographics {
+    margin-top: -160px;
+  }
+}
